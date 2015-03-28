@@ -1,0 +1,11 @@
+{
+    "name": "Cosplay Wonderwall",
+    "version": "0.1.0",
+    "description": "App para Cosplayers",
+    "main": "apps.js",
+    "author": "Yoshitomi Maehara Aliaga <trombon2004@gmail.com>",
+    "dependencies":{
+        "express":"3.2.4",
+        "socket.io":"0.9.14"
+    }
+}
