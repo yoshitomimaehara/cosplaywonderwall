@@ -1,3 +1,8 @@
 # cosplaywonderwall
+Pagina para apoyar y promocionar Cosplayers en Lima
 
-- LP: PHP
+**Lenguajes Utilizados**: 
+  - PHP
+  - HTML5
+
+**Estado**:Pausado
