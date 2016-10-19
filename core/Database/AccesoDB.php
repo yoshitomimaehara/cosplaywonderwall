@@ -1,4 +1,5 @@
 <?php
+namespace cosplaywonderwall\core\database;
 class AccesoDB{
     private static $pdo = null;
 
@@ -10,17 +11,17 @@ class AccesoDB{
                 $pass = "fumoffu";
                 $bd = "cosplaywonderwall";
                 $url = "mysql:dbname:" + $bd + "host=" + $host;
-                self::$pdo = new PDO($url, $user, $pass);
-                self::$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-                self::$pdo->setAttribute(PDO::ATTR_CASE, PDO::ATTR_CASE_LOWER);
-                self::$pdo->setAttribute(PDO::ATTR_AUTOCOMMIT, FALSE);
+                AccesoDB::$pdo = new PDO($url, $user, $pass);
+                AccesoDB::$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+                AccesoDB::$pdo->setAttribute(PDO::ATTR_CASE, PDO::ATTR_CASE_LOWER);
+                AccesoDB::$pdo->setAttribute(PDO::ATTR_AUTOCOMMIT, FALSE);
             }catch (PDOException $e){
-                self::$pdo = null;
+                AccesoDB::$pdo = null;
                 throw $e;
             }
         }
 
-        return self::$pdo;
+        return AccesoDB::$pdo;
     }
 }
 ?>

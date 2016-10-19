@@ -13,6 +13,12 @@ class Login{
         return $this->username;
     }
     
-    
+    function setPassword($password){
+        $this->password = $password;
+    }
+
+    function getPassword(){
+        return $this->password;
+    }
 }
 ?>
